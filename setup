@@ -8,3 +8,7 @@ sudo umake ide pycharm
 #https://forge.puppet.com/puppetlabs/git
 sudo puppet module install puppetlabs-git --version 0.5.0
 sudo puppet apply -e "include git"
+
+# Problem 1
+# sudo puppet config print modulepath 
+# bez sudo to hazi jiny modulepath a potom vsechny puppet apply s manifesty musi byt spousteny pod rootem
