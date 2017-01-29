@@ -4,3 +4,6 @@ sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
 sudo apt update
 sudo apt install ubuntu-make
 sudo umake ide pycharm
+
+sudo puppet module install puppetlabs-git --version 0.5.0
+sudo puppet apply -e "include git"
