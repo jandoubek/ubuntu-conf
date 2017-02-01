@@ -29,3 +29,8 @@ ssh gitlab
 puppet module install puppetlabs-vcsrepo
 
 puppet apply ubuntu-conf/repos.pp
+
+#Displays
+sudo apt install dkms
+# Download Displaylink -> unpack -> chmod +x -> execute
+
