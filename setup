@@ -12,3 +12,14 @@ sudo puppet apply -e "include git"
 # Problem 1
 # sudo puppet config print modulepath 
 # bez sudo to hazi jiny modulepath a potom vsechny puppet apply s manifesty musi byt spousteny pod rootem
+
+# Pridat klic
+ssh-add ~/.ssh/jd-dm
+
+sudo apt install ssh-askpass
+
+puppet apply ssh-config.pp
+
+puppet module install puppetlabs-vcsrepo
+
+puppet apply repos.pp
