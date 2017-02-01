@@ -18,8 +18,14 @@ ssh-add ~/.ssh/jd-dm
 
 sudo apt install ssh-askpass
 
-puppet apply ssh-config.pp
+#clone config repo
+git clone https://github.com/jandoubek/ubuntu-conf.git
+
+puppet apply ubuntu-conf/ssh-config.pp
+
+#establish initial connection and 
+ssh gitlab
 
 puppet module install puppetlabs-vcsrepo
 
-puppet apply repos.pp
+puppet apply ubuntu-conf/repos.pp

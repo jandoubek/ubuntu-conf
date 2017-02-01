@@ -1,6 +1,12 @@
 # config of ssh managed by puppet
 
 Host gitlab
-HostName gitlab.datamole.cz
-IdentityFile ~/.ssh/jd-dm
-User git
+  HostName gitlab.datamole.cz
+  IdentityFile ~/.ssh/jd-dm
+  User git
+
+# Git hub
+Host github github.com
+  HostName github.com
+  IdentityFile ~/.ssh/github
+  User git
