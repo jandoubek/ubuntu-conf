@@ -34,3 +34,7 @@ puppet apply ubuntu-conf/repos.pp
 sudo apt install dkms
 # Download Displaylink -> unpack -> chmod +x -> execute
 
+#Python
+sudo apt install python-pip
+pip install --upgrade pip
+pip install pandas
