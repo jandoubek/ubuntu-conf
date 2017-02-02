@@ -37,5 +37,10 @@ sudo apt install dkms
 #Python
 sudo apt install python-pip
 pip install --upgrade pip
+
+#investment
 pip install pandas
+sudo pip install matplotlib
+sudo apt install python-tk
 sudo pip install pandas-datareader
+sudo pip install pyyaml
