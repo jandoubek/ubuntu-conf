@@ -45,6 +45,18 @@ sudo apt install python-tk
 sudo pip install pandas-datareader
 sudo pip install pyyaml
 
+#owncloud
+sudo sh -c "echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/Ubuntu_16.04/ /' > /etc/apt/sources.list.d/owncloud-client.list"
+sudo apt-get update
+sudo apt-get install owncloud-client
+
+#vpn
+sudo apt install openvpn
+#connect
+sudo openvpn --config datalab-vpn.ovpn
+#DNS
+sudo sh -c 'echo "nameserver 10.68.63.89" >/etc/resolv.conf'
+
 # Skype
 # http://askubuntu.com/questions/775087/how-to-install-skype-in-ubuntu-16-04
 # Canonical partners repo should be added
