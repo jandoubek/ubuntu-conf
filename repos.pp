@@ -6,6 +6,14 @@ vcsrepo { '/home/jdoubek/code/fei':
   #require  => File['key'],
 }
 
+vcsrepo { '/home/jdoubek/code/softwareStack':
+  ensure   => latest,
+  provider => git,
+  source   => 'gitlab:Core/SoftwareStack.git',
+  user     => 'jdoubek', #uses doubek's $HOME/.ssh config
+  #require  => File['key'],
+}
+
 vcsrepo { '/home/jdoubek/code/investment':
   ensure   => latest,
   provider => git,
