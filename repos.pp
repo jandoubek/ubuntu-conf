@@ -14,6 +14,22 @@ vcsrepo { '/home/jdoubek/code/softwareStack':
   #require  => File['key'],
 }
 
+vcsrepo { '/home/jdoubek/code/wiki':
+  ensure   => latest,
+  provider => git,
+  source   => 'gitlab:Wiki/Wiki.git',
+  user     => 'jdoubek', #uses doubek's $HOME/.ssh config
+  #require  => File['key'],
+}
+
+vcsrepo { '/home/jdoubek/code/asciidocthemes':
+  ensure   => latest,
+  provider => git,
+  source   => 'gitlab:Core/DatamoleAsciiDocThemes.git',
+  user     => 'jdoubek', #uses doubek's $HOME/.ssh config
+  #require  => File['key'],
+}
+
 vcsrepo { '/home/jdoubek/code/investment':
   ensure   => latest,
   provider => git,
