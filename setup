@@ -38,9 +38,21 @@ sudo apt install dkms
 sudo apt install python-pip
 pip install --upgrade pip
 
-#investment
+#investment - probably should move to virtualenv or setup.py
 pip install pandas
 sudo pip install matplotlib
 sudo apt install python-tk
 sudo pip install pandas-datareader
 sudo pip install pyyaml
+
+# Skype
+# http://askubuntu.com/questions/775087/how-to-install-skype-in-ubuntu-16-04
+# Canonical partners repo should be added
+sudo apt update
+sudo apt install skype
+
+# Sublime
+sudo add-apt-repository ppa:webupd8team/sublime-text-3
+sudo apt-get update
+sudo apt-get install sublime-text-installer
+
