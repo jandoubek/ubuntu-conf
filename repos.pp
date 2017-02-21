@@ -1,3 +1,5 @@
+#Datamole
+
 vcsrepo { '/home/jdoubek/code/fei':
   ensure   => latest,
   provider => git,
@@ -29,6 +31,16 @@ vcsrepo { '/home/jdoubek/code/asciidocthemes':
   user     => 'jdoubek', #uses doubek's $HOME/.ssh config
   #require  => File['key'],
 }
+
+vcsrepo { '/home/jdoubek/code/secdrafts':
+  ensure   => latest,
+  provider => git,
+  source   => 'gitlab:Core/BSecMonDrafts.git',
+  user     => 'jdoubek', #uses doubek's $HOME/.ssh config
+  #require  => File['key'],
+}
+
+#Personal
 
 vcsrepo { '/home/jdoubek/code/investment':
   ensure   => latest,
